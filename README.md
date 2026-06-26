@@ -1,10 +1,4 @@
-<div align="center">
-  <picture>
-      <img src="./assets/logo.png" width="30%" alt="Agents-A1">
-  </picture>
-</div>
-
-<hr>
+# Agents-A1: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
 
 <div align="center" style="line-height:1">
   <a href="https://discord.gg/K7eXwdGm" target="_blank"><img alt="Discord" src="https://img.shields.io/badge/Discord-Agents--A1-white?logo=discord&logoColor=white"/></a>
@@ -21,8 +15,6 @@
 <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📰&nbsp;&nbsp;<a href="https://github.com/InternScience/Agents-A1/blob/main/Agents-A1.pdf">Tech Report</a></b> &nbsp;&nbsp; | &nbsp;&nbsp; <b>🏠&nbsp;&nbsp;<a href="https://internscience.github.io/Agents-A1/">Home Page</a></b>
 </p>
 
-
-# Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
 
 **Agent-A1** is a 35B Mixture-of-Experts Agentic Model that reaches trillion-parameter-level performance by scaling the agent horizon. We investigate agent-horizon scaling from two perspectives: scaling long-horizon trajectories and scaling heterogeneous agent abilities. To support this goal, we build a long-horizon knowledge-action infrastructure that connects external knowledge, actions, observations, and verifier outcomes, producing agentic trajectories with an average length of **45K tokens**. Based on this, we train Agents-A1 with a three-stage recipe. First, we perform full-domain supervised fine-tuning to align the base model with broad agentic behaviors. Second, we train domain-level teacher models to capture specialized expertise in each domain. Third, we propose a multi-teacher domain-routed on-policy distillation with salient vocabulary alignment to improve knowledge transfer efficiency across different domains, unifying **six heterogeneous domains** into one deployable student model.
 
