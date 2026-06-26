@@ -18,7 +18,7 @@
 </div>
 
 <p align="center">
-<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📰&nbsp;&nbsp;<a href="https://www.arxiv.org/xxx">Tech Blog</a></b> &nbsp;&nbsp; | &nbsp;&nbsp; <b>🏠&nbsp;&nbsp;<a href="Agents-A1-homepage-url">Home Page</a></b>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📰&nbsp;&nbsp;<a href="https://github.com/InternScience/Agents-A1/blob/main/Agents-A1.pdf">Tech Report</a></b> &nbsp;&nbsp; | &nbsp;&nbsp; <b>🏠&nbsp;&nbsp;<a href="https://internscience.github.io/Agents-A1/">Home Page</a></b>
 </p>
 
 
