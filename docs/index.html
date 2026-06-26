@@ -1020,7 +1020,8 @@
   --tp-size 1 \
   --mem-fraction-static 0.8 \
   --context-length 262144 \
-  --reasoning-parser qwen3</code></pre>
+  --reasoning-parser qwen3 \
+  --tool-call-parser qwen3_coder</code></pre>
           </article>
           <article class="code-card">
             <h3>vLLM</h3>
@@ -1028,7 +1029,9 @@
   --port 8000 \
   --tensor-parallel-size 1 \
   --max-model-len 262144 \
-  --reasoning-parser qwen3</code></pre>
+  --reasoning-parser qwen3 \
+  --enable-auto-tool-choice \
+  --tool-call-parser qwen3_coder</code></pre>
           </article>
         </div>
       </div>
