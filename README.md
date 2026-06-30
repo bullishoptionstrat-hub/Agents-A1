@@ -7,7 +7,7 @@
 
 <div align="center" style="line-height: 1;">
   <a href="https://huggingface.co/InternScience/Agents-A1" target="_blank"><img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Agents--A1-ffc107?color=ffc107&logoColor=white"/></a>
-  <a href="https://modelscope.cn/models/Shanghai_AI_Laboratory/Agents-A1" target="_blank"><img alt="ModelScope" src="https://img.shields.io/badge/ModelScope-Agents--A1-624AFF?logo=modelscope&logoColor=white"/></a>
+  <a href="https://modelscope.cn/models/InternScience/Agents-A1" target="_blank"><img alt="ModelScope" src="https://img.shields.io/badge/ModelScope-Agents--A1-624AFF?logo=modelscope&logoColor=white"/></a>
 
 </div>
 
