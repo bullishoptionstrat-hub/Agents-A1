@@ -179,10 +179,16 @@
     }
     .actions {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 9px;
+      margin-top: 18px;
+    }
+    .action-row {
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
-      margin-top: 18px;
     }
     .btn {
       display: inline-flex;
@@ -199,10 +205,25 @@
       text-decoration: none;
       transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
     }
-    .btn.primary {
+    .btn.model-link {
+      border-width: 1px;
+    }
+    .btn.hf-link {
+      color: #2f2300;
+      border-color: #ffb000;
+      background: linear-gradient(135deg, #ffd21e 0%, #ffbf1f 52%, #ff9d00 100%);
+      box-shadow: 0 10px 22px rgba(255, 157, 0, 0.2);
+    }
+    .btn.ms-link {
       color: #fff;
-      border-color: #0f172a;
-      background: #0f172a;
+      border-color: #6547ff;
+      background: linear-gradient(135deg, #6547ff 0%, #6547ff 62%, #38c9cb 100%);
+      box-shadow: 0 10px 22px rgba(101, 71, 255, 0.22);
+    }
+    .btn.resource-link {
+      color: #1e293b;
+      border-color: #bfdbfe;
+      background: #eff6ff;
     }
     .btn:hover {
       transform: translateY(-1px);
@@ -718,12 +739,64 @@
       font-size: 14px;
     }
     .footer {
-      padding: 22px 0 30px;
+      padding: 24px 0 32px;
       color: #64748b;
       font-size: 13px;
       text-align: center;
       border-top: 1px solid #e2e8f0;
       background: #fff;
+    }
+    .footer-inner {
+      width: min(var(--maxw), calc(100% - 32px));
+      margin: 0 auto;
+      display: grid;
+      gap: 14px;
+      justify-items: center;
+    }
+    .footer-inner p {
+      margin: 0;
+    }
+    .visitor-panel {
+      width: min(280px, 100%);
+      display: grid;
+      gap: 4px;
+      justify-items: center;
+      padding: 6px 8px;
+      border: 1px solid #dbe3ef;
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+    .visitor-copy {
+      display: grid;
+      gap: 2px;
+    }
+    .visitor-title {
+      color: #0f172a;
+      font-weight: 800;
+    }
+    .visitor-note {
+      color: #64748b;
+      font-size: 10px;
+    }
+    .visitor-embed {
+      width: 100%;
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3px;
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .visitor-embed img,
+    .visitor-embed iframe {
+      max-width: 180px;
+      border: 0;
+    }
+    .visitor-embed img {
+      height: auto;
+      display: block;
     }
     @keyframes columnRise {
       from { transform: scaleY(0); }
@@ -797,8 +870,12 @@
         width: 58px;
         height: 58px;
       }
+      .action-row {
+        width: 100%;
+        flex-direction: column;
+      }
       .actions .btn {
-        flex: 1 1 100%;
+        width: 100%;
       }
       .hero-meta,
       .train-grid,
@@ -857,9 +934,15 @@
           and tool calling.
         </p>
         <div class="actions" aria-label="Project links">
-          <a class="btn primary" href="https://huggingface.co/InternScience/Agents-A1" target="_blank" rel="noopener noreferrer">Hugging Face Model</a>
-          <a class="btn" href="https://github.com/InternScience/Agents-A1" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-          <a class="btn" href="#benchmarks">View Benchmarks</a>
+          <div class="action-row model-row">
+            <a class="btn model-link hf-link" href="https://huggingface.co/InternScience/Agents-A1" target="_blank" rel="noopener noreferrer">Hugging Face Model</a>
+            <a class="btn model-link ms-link" href="https://www.modelscope.cn/models/InternScience/Agents-A1" target="_blank" rel="noopener noreferrer">ModelScope Model</a>
+          </div>
+          <div class="action-row resource-row">
+            <a class="btn resource-link" href="https://github.com/InternScience/Agents-A1" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+            <a class="btn resource-link" href="https://arxiv.org/pdf/2606.30616" target="_blank" rel="noopener noreferrer">Tech Report</a>
+            <a class="btn resource-link" href="#benchmarks">View Benchmarks</a>
+          </div>
         </div>
         <div class="hero-meta" aria-label="Key model facts">
           <div class="metric">
@@ -1086,7 +1169,23 @@
   </main>
 
   <footer class="footer">
-    Agents-A1 is released by InternScience. Star the repository, try the model, and report issues through GitHub.
+    <div class="footer-inner">
+      <p>Agents-A1 is released by InternScience. Star the repository, try the model, and report issues through GitHub.</p>
+      <section class="visitor-panel" aria-label="Visitor information">
+        <div class="visitor-copy">
+          <span class="visitor-title">Visitor Map</span>
+          <span class="visitor-note">Live country and city statistics powered by MapMyVisitors.</span>
+        </div>
+        <div class="visitor-embed" aria-label="MapMyVisitors visitor map">
+          <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=d6uRUBCk1WnZoZmOy0g4RyPNManqNTP3GXfRveHzvL8&amp;cl=ffffff&amp;w=a"></script>
+          <noscript>
+            <a href="https://mapmyvisitors.com/web/1c646" title="Visit tracker" target="_blank" rel="noopener noreferrer">
+              <img src="https://mapmyvisitors.com/map.png?d=d6uRUBCk1WnZoZmOy0g4RyPNManqNTP3GXfRveHzvL8&amp;cl=ffffff" alt="Visit tracker">
+            </a>
+          </noscript>
+        </div>
+      </section>
+    </div>
   </footer>
   <script>
     (() => {
