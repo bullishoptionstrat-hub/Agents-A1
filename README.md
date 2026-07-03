@@ -429,5 +429,13 @@ For detailed evaluation scripts, task definitions, metrics, and reproduction ins
 If you find our work helpful, feel free to give us a cite.
 
 ```
-
+@misc{bai2026scalinghorizonparametersreaching,
+      title={Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent}, 
+      author={Lei Bai and Zongsheng Cao and Yang Chen and Zhiyao Cui and Shangheng Du and Yue Fan and Shiyang Feng and Zijie Guo and Haonan He and Liang He and Xiaohan He and Shuyue Hu and Yusong Hu and Songtao Huang and Yichen Jiang and Hao Li and Xin Li and Dahua Lin and Weihao Lin and Fenghua Ling and Dongrui Liu and Zhuo Liu and Runmin Ma and Chunjiang Mu and Haoyang Peng and Tianshuo Peng and Jinxin Shi and Luohe Shi and Boyuan Sun and Zelin Tan and Shengji Tang and Qianyi Wang and Yiming Wu and Yi Xie and Xiangchao Yan and Jingqi Ye and Peng Ye and Fangchen Yu and Jiakang Yuan and Bihao Zhan and Bo Zhang and Chen Zhang and Shufei Zhang and Shuaiyu Zhang and Wenlong Zhang and Yiqun Zhang and Junpeng Zhao and Zhijie Zhong and Bowen Zhou and Yuhao Zhou},
+      year={2026},
+      eprint={2606.30616},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.30616}, 
+}
 ```
