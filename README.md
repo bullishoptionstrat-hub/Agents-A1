@@ -18,6 +18,8 @@
 ---
 
 ## 🔥 News
+- **2026.7.8**: 🔥🔥 By popular demand from the community, our 4B model is coming in the next few days — making it faster and easier to build your own local AI assistant.
+
 - **2026.7.2**: 🔥🔥 Based on Agents-A1, we have released a series of quantized model variants. Please refer to the [Agents-A1 collection](https://huggingface.co/collections/InternScience/agents-a1). Besides, we’d like to thank the [mlx-community](https://huggingface.co/collections/mlx-community/agents-a1) for providing quantized versions at multiple scales. Try running Agents-A1 on your Mac!
 
 - **2026.6.26**: 🔥🔥 We have open-sourced the Agents-A1 35B-A3B model, along with the evaluation code for selected domains and the technical report.
